@@ -3,7 +3,7 @@ body { margin: 0; padding: 0; font-family: Verdana; color: #333333; position: re
 .header {
   width: 100%;
   margin: 0 auto;
-  background: url(/images/_header_bg.jpg) no-repeat top center;
+  background: url(/images/header_bg.jpg) no-repeat top center;
   height: 301px;
   padding: 0;
   
@@ -35,7 +35,7 @@ body { margin: 0; padding: 0; font-family: Verdana; color: #333333; position: re
   .footer {
     position: absolute;
     bottom: 0;
-    background: url(/images/_footer_bottom_bg.jpg) repeat-x bottom left;
+    background: url(/images/footer_bottom_bg.jpg) repeat-x bottom left;
     width: 100%;
    
   }
@@ -54,7 +54,7 @@ body { margin: 0; padding: 0; font-family: Verdana; color: #333333; position: re
    }
   
   .footer .aside {
-   background: url(/images/_footer_bg.jpg) no-repeat bottom center; 
+   background: url(/images/footer_bg.jpg) no-repeat bottom center; 
    margin: 0 auto;
 
   }
@@ -141,7 +141,7 @@ background: url(/images/header_connect.png) no-repeat top left; text-indent: -99
   margin: 0 auto;
   padding-top: 20px;
   width: 820px;
-  background: url(/images/_speakers_box_bg.png) no-repeat top center;
+  background: url(/images/speakers_box_bg.png) no-repeat top center;
   height: 550px;
 }
 
@@ -286,7 +286,7 @@ padding-top: 60px;
   }
   
   .location .map {
-    background: url(/images/_map_tmp.jpg) no-repeat top left;
+    background: url(/images/map_tmp.jpg) no-repeat top left;
     float: left;
     display: block;
     height: 360px;
