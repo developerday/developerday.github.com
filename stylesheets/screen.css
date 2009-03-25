@@ -1,6 +1,10 @@
 body {
   background: white url(/images/header_back.jpg) no-repeat center top;
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
+  font-size: .95em;
+}
+p {
+  line-height: 1.2em;
 }
 div#header, div#content, div#footer {
   margin: 0 auto;
@@ -155,10 +159,56 @@ a#register {
   left: 50%;
   top: 170px;
 }
+.no_register a#register {
+  display: none;
+}
+.no_register ul#nav li.reg {
+  display: none;
+}
+.no_register ul#nav li {
+  width: 265px;
+}
+
+p#filler {
+  height: 350px;
+}
+#about p#filler {
+  height: 480px;
+}
+#events p#filler {
+  height: 450px;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  margin-top: 1em;
+}
+dt.past {
+  font-style: italic;
+}
+dt.past a {
+  font-style: normal;
+}
+dd {
+  margin-left: 1em;
+  padding-left: 0;
+  margin-top: .5em;
+}
+dd.more {
+  margin-left: 1.25em;
+  padding-left: 0;
+  font-size: .8em;
+}
 
 /** DURHAM **/
 #durham div#header {
   background: url(/images/durham/description.png) no-repeat 105% 40px;
+}
+#durham.no_register div#header {
+  background: url(/images/durham/description.png) no-repeat 105% 120px;
 }
 #durham span#logo {
   background: url(/images/durham/logo.png) no-repeat left top;
