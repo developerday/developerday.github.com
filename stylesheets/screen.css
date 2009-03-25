@@ -1,5 +1,6 @@
 body {
   background: white url(/images/header_back.jpg) no-repeat center top;
+  font-family: "helvetica neue", helvetica, verdana, sans-serif;
 }
 div#header, div#content, div#footer {
   margin: 0 auto;
