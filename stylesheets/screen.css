@@ -1,0 +1,164 @@
+body {
+  background: white url(/images/header_back.jpg) no-repeat center top;
+}
+div#header, div#content, div#footer {
+  margin: 0 auto;
+  width: 800px;
+}
+div#main {
+  background: transparent url(/images/footer_back.jpg) no-repeat center bottom;
+}
+div#header {
+  height: 300px;
+}
+div#footer {
+  height: 165px;
+}
+a {
+  color: #369;
+}
+
+
+th {
+  font-weight: normal;
+  padding-top: 1em;
+  text-align: center;
+  width: 150px;
+}
+th, td {
+  border-bottom: 1px solid #ccc;
+}
+tr {
+  vertical-align: text-top;
+}
+th img {
+  background: url(/images/bio_pic_outline.png) no-repeat left top;
+  padding: 5px 6px;
+}
+h3 {
+  font-size: 1em;
+  margin: 0 0 .5em;
+}
+h3.single {
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: .9em;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+}
+p.bio {
+  font-size: .8em;
+  margin-bottom: 1.5em;
+}
+p.more {
+  font-size: .8em;
+  margin-top: -1em;
+}
+
+div#questions {
+  clear: left;
+}
+div#map {
+  float: left;
+  height: 390px;
+  width: 570px;
+}
+div#map a {
+  clear: left;
+  display: block;
+  font-size: .8em;
+}
+
+address {
+  font-size: .8em;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+address a {
+  font-weight: bold;
+}
+address a {
+  font-weight: bold;
+}
+ul#nav {
+  height: 3em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
+ul#nav li {
+  display: block;
+  font-size: 1.2em;
+  float: left;
+  text-align: center;
+  width: 200px;
+  line-height: 2em;
+}
+ul#nav li a {
+  color: #666;
+  text-decoration: none;
+}
+ul#nav li a:hover {
+  text-decoration: underline;
+}
+
+span#logo {
+  height: 267px;
+  left: 50%;
+  margin-left: -390px;
+  text-indent: -1000em;
+  top: 33px;
+  overflow: hidden;
+  position: absolute;
+  width: 507px;
+}
+
+h2 {
+  height: 95px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -1000em;
+}
+div#intro     h2 { background: url(/images/header_connect.png)   no-repeat left bottom; }
+div#agenda    h2 { background: url(/images/header_agenda.png)    no-repeat left bottom; }
+div#venue     h2 { background: url(/images/header_location.png)  no-repeat left bottom; }
+div#questions h2 { background: url(/images/header_questions.png) no-repeat left bottom; height: 60px;}
+
+div#intro p {
+  margin-left: 20px;
+  width: 760px;
+}
+
+div#questions {
+  padding-bottom: 20px;
+}
+div#footer {
+  color: white;
+  position: relative;
+  top: 20px;
+}
+div#footer img {
+  margin: -10px 10px 0 20px;
+  vertical-align: middle;
+}
+
+a#register {
+  display: block;
+  margin-left: 150px;
+  position: absolute;
+  left: 50%;
+  top: 170px;
+}
+
+/** DURHAM **/
+#durham div#header {
+  background: url(/images/durham/description.png) no-repeat 105% 40px;
+}
+#durham span#logo {
+  background: url(/images/durham/logo.png) no-repeat left top;
+}
