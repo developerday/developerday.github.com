@@ -1,18 +1,70 @@
+/* @group reset */
+
+	* { margin:  0; padding: 0; }
+	ul { list-style: none; margin: 0px; padding: 0px; }
+	p { margin: 10px 0;}
+	a img, frameset { border: 0; }
+	img { outline: none; }
+
+/* @end */
+
+/* @group utility */
+
+	a { outline: none; }
+	
+	.clear {
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+	padding: 0px;
+	margin: -1px 0 0 0;
+	}
+	
+	.row:after, .clearfix:after {
+	content: ".";
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+/* @end */
+
+
 body {
-  background: white url(/images/header_back.jpg) no-repeat center top;
+  background: white url(/images/repeat-bg.jpg) 0 0 repeat-x;
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
   font-size: .95em;
+  padding: 0px; 
+  margin: 0px;
+  color: #313131;
 }
+
+img { border: 0px; }
+
+div#wrapper { 
+margin: 0px auto;
+background: url(/images/dc/header_back.png) no-repeat center top; 
+}
+
+div#inner-wrapper { 
+margin: 0px auto;
+background: url(/images/repeat-bg-footer.jpg) repeat-x center bottom; 
+}
+
+
 p {
   line-height: 1.2em;
 }
 div#header, div#content, div#footer {
   margin: 0 auto;
-  width: 800px;
+  width: 840px;
+  padding-right: 20px;
 }
 div#main {
-  background: transparent url(/images/footer_back.jpg) no-repeat center bottom;
+  background: transparent url(/images/footer_back.png) no-repeat center bottom;
+  
 }
+
 div#header {
   height: 300px;
 }
@@ -30,20 +82,23 @@ th {
   text-align: center;
   width: 150px;
 }
+
 th, td {
   border-bottom: 1px solid #ccc;
+  text-align: top;
 }
+
 tr {
+  padding: 20px 0; 
   vertical-align: text-top;
 }
+
 th img {
   background: url(/images/bio_pic_outline.png) no-repeat left top;
   padding: 5px 6px;
+  clear: both;
 }
-h3 {
-  font-size: 1em;
-  margin: 0 0 .5em;
-}
+
 h3.single {
   margin-bottom: 1em;
 }
@@ -88,25 +143,37 @@ address a {
 address a {
   font-weight: bold;
 }
+
 ul#nav {
-  height: 3em;
+  width: 1012px;
+  height:  64px;	
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 800px;
+  margin: 20px 0 0 0;
+  padding-left: 90px;
+  z-index: 3;
+  position: relative;
+  top: 0px; 
+  left: -78px;
+  background: url(/images/nav-banner.png) 0 0 no-repeat;
 }
+
 ul#nav li {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   float: left;
-  text-align: center;
-  width: 200px;
-  line-height: 2em;
+  line-height: 74px;
+  vertical-align: middle;
+  background: url(/images/nav-seperator.gif) center right no-repeat;
+  margin-right: 25px;
+  padding-right: 25px;
 }
+
 ul#nav li a {
-  color: #666;
+  color: #fff;
   text-decoration: none;
 }
+
 ul#nav li a:hover {
   text-decoration: underline;
 }
@@ -124,15 +191,23 @@ span#logo {
 
 h2 {
   height: 95px;
-  margin: 0;
+  margin: 40px 0 20px 0;
   overflow: hidden;
   padding: 0;
   text-indent: -1000em;
 }
-div#intro     h2 { background: url(/images/header_connect.png)   no-repeat left bottom; }
-div#agenda    h2 { background: url(/images/header_agenda.png)    no-repeat left bottom; }
-div#venue     h2 { background: url(/images/header_location.png)  no-repeat left bottom; }
+div#intro     h2 { margin-top: 10px; background: url(/images/header_connect.gif)   no-repeat left bottom; }
+div#agenda    h2 { background: url(/images/header_agenda.gif)    no-repeat left bottom; }
+div#venue     h2 { background: url(/images/header_location.gif)  no-repeat left bottom; }
 div#questions h2 { background: url(/images/header_questions.png) no-repeat left bottom; height: 60px;}
+div#bodycontent.event h2 { background: url(/images/header_events.gif) no-repeat left bottom; height: 60px;}
+div#bodycontent.about h2 { background: url(/images/header_about.gif) no-repeat left bottom; height: 60px;}
+
+h3 { 
+font-size: 1.8em;
+font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+color: #336699;
+}
 
 div#intro p {
   margin-left: 20px;
@@ -142,10 +217,17 @@ div#intro p {
 div#questions {
   padding-bottom: 20px;
 }
+
+div#bodycontent p {
+  margin-left: 20px;
+  width: 760px;
+}
+
+
 div#footer {
   color: white;
   position: relative;
-  top: 20px;
+  top: 60px;
 }
 div#footer img {
   margin: -10px 10px 0 20px;
@@ -165,9 +247,7 @@ a#register {
 .no_register ul#nav li.reg {
   display: none;
 }
-.no_register ul#nav li {
-  width: 265px;
-}
+
 
 p#filler {
   height: 350px;
@@ -203,6 +283,12 @@ dd.more {
   font-size: .8em;
 }
 
+div#agenda h3 { 
+font-size: 1.6em;
+font-weight: normal;
+margin: 0 0 10px 0;
+}
+
 /** DURHAM **/
 #durham div#header {
   background: url(/images/durham/description.png) no-repeat 105% 40px;
@@ -211,5 +297,5 @@ dd.more {
   background: url(/images/durham/description.png) no-repeat 105% 120px;
 }
 #durham span#logo {
-  background: url(/images/durham/logo.png) no-repeat left top;
+  background: url(/images/dc/logo.png) no-repeat left top;
 }
