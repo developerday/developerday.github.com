@@ -41,9 +41,8 @@ body {
 
 img { border: 0px; }
 
-div#wrapper { 
+#durham div#wrapper { 
 margin: 0px auto;
-background: url(/images/dc/header_back.png) no-repeat center top; 
 }
 
 div#inner-wrapper { 
@@ -297,5 +296,22 @@ margin: 0 0 10px 0;
   background: url(/images/durham/description.png) no-repeat 105% 120px;
 }
 #durham span#logo {
+  background: url(/images/durham/logo.png) no-repeat left top;
+}
+#durham div#wrapper { 
+  background: url(/images/durham/header_back.jpg) no-repeat center top; 
+}
+
+/** DC **/
+#dc div#header {
+  background: url(/images/dc/description.png) no-repeat 105% 40px;
+}
+#dc.no_register div#header {
+  background: url(/images/dc/description.png) no-repeat 105% 120px;
+}
+#dc span#logo {
   background: url(/images/dc/logo.png) no-repeat left top;
+}
+#dc div#wrapper { 
+  background: url(/images/dc/header_back.png) no-repeat center top; 
 }
