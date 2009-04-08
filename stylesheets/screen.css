@@ -41,9 +41,6 @@ body {
 
 img { border: 0px; }
 
-#durham div#wrapper { 
-margin: 0px auto;
-}
 
 div#inner-wrapper { 
 margin: 0px auto;
@@ -304,7 +301,7 @@ margin: 0 0 10px 0;
 
 /** DC **/
 #dc div#header {
-  background: url(/images/dc/description.png) no-repeat 105% 40px;
+  background: none;
 }
 #dc.no_register div#header {
   background: url(/images/dc/description.png) no-repeat 105% 120px;
