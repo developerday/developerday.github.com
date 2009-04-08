@@ -1,394 +1,314 @@
-html { background: #fff url(/images/bg.jpg) repeat-x top left; margin: 0; padding: 0;}
-body { margin: 0; padding: 0; font-family: Verdana; color: #333333; position: relative; }
-.header {
-  width: 100%;
+/* @group reset */
+
+	* { margin:  0; padding: 0; }
+	ul { list-style: none; margin: 0px; padding: 0px; }
+	p { margin: 10px 0;}
+	a img, frameset { border: 0; }
+	img { outline: none; }
+
+/* @end */
+
+/* @group utility */
+
+	a { outline: none; }
+	
+	.clear {
+	height: 0px;
+	clear: both;
+	overflow: hidden;
+	padding: 0px;
+	margin: -1px 0 0 0;
+	}
+	
+	.row:after, .clearfix:after {
+	content: ".";
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+/* @end */
+
+
+body {
+  background: white url(/images/repeat-bg.jpg) 0 0 repeat-x;
+  font-family: "helvetica neue", helvetica, verdana, sans-serif;
+  font-size: .95em;
+  padding: 0px; 
+  margin: 0px;
+  color: #313131;
+}
+
+img { border: 0px; }
+
+
+div#inner-wrapper { 
+margin: 0px auto;
+background: url(/images/repeat-bg-footer.jpg) repeat-x center bottom; 
+}
+
+
+p {
+  line-height: 1.2em;
+}
+div#header, div#content, div#footer {
   margin: 0 auto;
-  background: url(/images/header_bg.jpg) no-repeat top center;
-  height: 301px;
-  padding: 0;
+  width: 840px;
+  padding-right: 20px;
+}
+div#main {
+  background: transparent url(/images/footer_back.png) no-repeat center bottom;
   
 }
-.header .article {
-  width: 960px;
+
+div#header {
   height: 300px;
-  position: relative;
-  margin: 0 auto;
 }
-.header a {
-  position: absolute;
-  text-indent: -9999em;
-  bottom: 20px;
-  width: 279px;
-  height: 101px;
-  background: url(/images/register_button.png) no-repeat top center;
-  right: 8px;
+div#footer {
+  height: 165px;
+}
+a {
+  color: #369;
 }
 
- .speakers {
-    width: 100%;
-    margin: 0 auto;
-    background: url(/images/page_bg.jpg) no-repeat top center;
-    height: 788px;
-    padding: 0;
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    background: url(/images/footer_bottom_bg.jpg) repeat-x bottom left;
-    width: 100%;
-   
-  }
 
- *:first-child+html .location {
-   height: auto;
-   margin-bottom: -550px;
-   z-index: 1000;
- }
-  
-   *:first-child+html .footer {
-     position: relative;
-     padding-top: 100px;
-     height: auto;
-     margin-top: -550px;
-   }
-  
-  .footer .aside {
-   background: url(/images/footer_bg.jpg) no-repeat bottom center; 
-   margin: 0 auto;
-
-  }
-
-  .footer address  {
-    width: 790px;
-    margin: 0px auto 0 auto;
-    position: relative;
-    padding-top: 550px;
-    
-  }
-    
-  .footer span, .footer a, .footer em{
-    bottom: 90px;
-    display: -moz-inline-block;
-    display: inline-block;
-    position: relative; 
-  }
-    
-  *:first-child+html .footer span,
-  *:first-child+html .footer a,
-  *:first-child+html .footer em
-   {       
-    display: block;
-    float: left; 
-   }
- 
-  *:first-child+html .footer {       
-    z-index: 100;
-     
-  }
- 
-  .footer span {
-    width: 102px;
-    height: 19px;
-    background: url(/images/header_sponsor.png) no-repeat top left;
-    text-indent: -9999em;
-    bottom: 63px;
-  }
-  
-  .footer em {
-     background: url(/images/ampersand.png) no-repeat top center;
-     bottom: 63px;
-     width: 40px;
-     height: 20px;
-     text-indent: -9999em;
-  }
-  
-  .footer a[href="http://viget.com"] {
-    width: 108px ;
-    height: 59px;
-    background: url(/images/viget_logo.png) no-repeat top left;
-    text-indent: -9999em;
-    z-index: 1000;
-    margin-left: 20px;
-        
-  }
-  
-  .footer a[href="http://thinkrelevance.com"] {
-    background: url(/images/rel_logo.png) no-repeat top left;
-    width: 90px;
-    height: 61px;
-    text-indent: -9999em;
-    z-index: 1000;
-    
-  }
-
-.header,
-.speakers,
-.schedule,
-.location
-{ margin: 0 auto; }
-
-
-.header h1 {margin: 0; padding; 0}
-.header h1, .header p { display: none;}
-.speakers h2 {display: block; margin: 0 auto; width: 819px; padding-left: 20px; padding-top: 20px; height: 85px;
-background: url(/images/header_connect.png) no-repeat top left; text-indent: -9999em;}
-
-.speakers p { display: block; width: 800px; margin: 0 auto;}
-
-.speakers ul {
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  width: 820px;
-  background: url(/images/speakers_box_bg.png) no-repeat top center;
-  height: 550px;
+th {
+  font-weight: normal;
+  padding-top: 1em;
+  text-align: center;
+  width: 150px;
 }
 
-.speakers ul li {
+th, td {
+  border-bottom: 1px solid #ccc;
+  text-align: top;
+}
+
+tr {
+  padding: 20px 0; 
+  vertical-align: text-top;
+}
+
+th img {
+  background: url(/images/bio_pic_outline.png) no-repeat left top;
+  padding: 5px 6px;
+  clear: both;
+}
+
+h3.single {
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: .9em;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+}
+p.bio {
+  font-size: .8em;
+  margin-bottom: 1.5em;
+}
+p.more {
+  font-size: .8em;
+  margin-top: -0.5em;
+}
+
+div#questions {
+  clear: left;
+}
+div#map {
   float: left;
-  display: block; 
-  width: 380px;  
-  padding-right: 10px;
-  height: 128px;
-  position: relative;
+  height: 390px;
+  width: 570px;
 }
-
-*:first-child+html .speakers .vcard { position: relative;}
-*:first-child+html .speakers .vcard p { position: absolute; right: 0; width: 290px; }
-
-.speakers h3 {
-  font-family: Georgia;
-}
-
- .speakers .figure {
-   display: block;
-   width: 96px;
-   height: 96px;
-   background: url(/images/bio_pic_outline.png) no-repeat top center;;
-   float: left;
- }
- 
- 
- .speakers .figure img {
-   padding-left: 10px;
-   padding-top: 5px;
- }
- 
- .speakers .vcard p.extended {
-   display: none;
- }
- 
- .speakers .vcard p {
-   width: 340px;
-   font-size: 11px;
-   
- }
- 
- .speakers .vcard p a {
-   font-weight: bold;
-   text-decoration: underline;
- }
- 
- .speakers .vcard h3 {
-   padding: 0 0 0 0;
-   margin: 10px 0 5px 0;
- }
- 
- .speakers a {
-   text-decoration: none;
-   font-weight: normal;
-   color: #336699;
- }
- .speakers .vcard img {border: none;}
- 
- 
- .schedule { 
-   clear: both;
-padding-top: 60px;
-   width: 800px;
-   background: #fff;
-  }
- 
- .schedule caption span {
-   background: url(/images/header_agenda.png) no-repeat top left;
-   height: 70px;
-   width: 790px;
-   display: block;
-   text-indent: -9999em;
- }
- 
- .schedule table {
-   border-collapse: collapse;
-   width: 790px;
- }
- 
- .schedule table td {
-   font-size: 11px;
-   border-bottom: 1px solid #cccccc;
-   padding: 30px 20px;
-   vertical-align: top;
- }
- 
- .schedule table tr.break td {
-   background: #e6eaec;
- }
- 
- .schedule table tr > td {
-   width: 120px;
- }
- 
- .schedule table tr > td + td {
-   width: auto;
- }
- 
- .schedule .title {
-   display: block;
-   font-size: 18px;
-   font-family: Georgia;
-   margin: 0 0 15px 0;
-   color: #336699;
- }
-  
- .location {   
-  height: 640px;
-  padding-top: 80px;
-  position: relative;
-  z-index: 10;
-  padding-bottom: 70px;
-}
-
-:first-child+html .location {
- position: relative;
-
-}
-
-:first-child+html .footer address{
-  position: relative;
-
-}
-
-  .location h2 {
-    background: url(/images/header_location.png) no-repeat top left;
-    display: block;
-    width: 790px;
-    height: 70px;
-    text-indent: -9999em;
-    margin: 0 auto;
-  }
-  
-  .location .article {
-    width: 800px;
-    margin: 0 auto;
-    height: auto;
-    clear: both;
-    
-  }
-  
-  .location .map {
-    background: url(/images/map_tmp.jpg) no-repeat top left;
-    float: left;
-    display: block;
-    height: 360px;
-    width: 550px;
-  }
-  
-  .location .aside {       
-    float: right;
-    width: 230px;
-    min-height: 150px;
-    display: block;
-    font-size: 12px;
-    line-height: 16px;
-    color: #666;
-  }
-  
-  .location .aside a.fn.org {
-     background: url(/images/durham-arts_logo.png) no-repeat top left;
-     display: block;
-     padding-top: 160px;         
-     padding-bottom: 5px;
-     color: #666;
-     font-weight: bold;
-     text-decoration: none;
-   }
-   
-   .location .adr {
-     display: block;
-     padding-bottom: 15px;
-   }
-   
-   .location .tel {
-     display: block;
-     padding-bottom: 15px;
-   }
-   
-   .location .aside a.url {
-     color: #c94c13;
-    
-     font-weight: bold;
-   }
-   
-   
-   .location .questions h2 {
-      background: url(/images/header_questions.png) no-repeat bottom left;
-      margin-left: 0;
-      padding-top: 50px;
-      width: 136px;
-      height: 26px;
-   }
-   
-   .location .questions p {
-     font-size: 12px;
-   }
-   
-   .location .questions p a {
-     color: #c94c13;
-   }
-   /*
-      body {
-       background: url("
-         javascript:
-           document.body.onload = function(){
-              var xlink = document.getElementById('sponsor-link');
-              if (xlink) {
-                  xlink.style.zIndex = 9999;
-              }
-           }
-       ");
-      }*/
-   
-
-.intro p {
-	margin-bottom: 1em;
-}
-div.map a {
-	font-size: 12px;
-}
-.schedule table td.no-desc {
-  padding-bottom: 15px;
-}
-
-.header p.description {
-  background: url(/images/description.png) no-repeat bottom right;
+div#map a {
+  clear: left;
   display: block;
-  height: 120px;
+  font-size: .8em;
+}
+
+address {
+  font-size: .8em;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+address a {
+  font-weight: bold;
+}
+address a {
+  font-weight: bold;
+}
+
+ul#nav {
+  width: 1012px;
+  height:  64px;	
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding-left: 90px;
+  z-index: 3;
+  position: relative;
+  top: 0px; 
+  left: -78px;
+  background: url(/images/nav-banner.png) 0 0 no-repeat;
+}
+
+ul#nav li {
+  display: block;
+  font-size: 1.8em;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  float: left;
+  line-height: 74px;
+  vertical-align: middle;
+  background: url(/images/nav-seperator.gif) center right no-repeat;
+  margin-right: 25px;
+  padding-right: 25px;
+}
+
+ul#nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#nav li a:hover {
+  text-decoration: underline;
+}
+
+span#logo {
+  height: 267px;
+  left: 50%;
+  margin-left: -390px;
+  text-indent: -1000em;
+  top: 33px;
   overflow: hidden;
   position: absolute;
-  right: 10px;
-  top: 110px;
-  text-indent: -1000em;
-  width: 279px;
+  width: 507px;
 }
 
- .speakers .vcard p.extended {
-  display: none;
+h2 {
+  height: 95px;
+  margin: 40px 0 20px 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -1000em;
+}
+div#intro     h2 { margin-top: 10px; background: url(/images/header_connect.gif)   no-repeat left bottom; }
+div#agenda    h2 { background: url(/images/header_agenda.gif)    no-repeat left bottom; }
+div#venue     h2 { background: url(/images/header_location.gif)  no-repeat left bottom; }
+div#questions h2 { background: url(/images/header_questions.png) no-repeat left bottom; height: 60px;}
+div#bodycontent.event h2 { background: url(/images/header_events.gif) no-repeat left bottom; height: 60px;}
+div#bodycontent.about h2 { background: url(/images/header_about.gif) no-repeat left bottom; height: 60px;}
+
+h3 { 
+font-size: 1.8em;
+font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+color: #336699;
+}
+
+div#intro p {
+  margin-left: 20px;
+  width: 760px;
+}
+
+div#questions {
+  padding-bottom: 20px;
+}
+
+div#bodycontent p {
+  margin-left: 20px;
+  width: 760px;
+}
+
+
+div#footer {
+  color: white;
+  position: relative;
+  top: 60px;
+}
+div#footer img {
+  margin: -10px 10px 0 20px;
+  vertical-align: middle;
+}
+
+a#register {
+  display: block;
+  margin-left: 150px;
   position: absolute;
-  top: 0;
-  left: 95px;
-  background-color: white;
-  border: 1px solid #369;
-  width: 250px;
-  padding: 20px;
-  z-index: 1000;
- }
+  left: 50%;
+  top: 170px;
+}
+.no_register a#register {
+  display: none;
+}
+.no_register ul#nav li.reg {
+  display: none;
+}
+
+
+p#filler {
+  height: 350px;
+}
+#about p#filler {
+  height: 480px;
+}
+#events p#filler {
+  height: 450px;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  margin-top: 1em;
+}
+dt.past {
+  font-style: italic;
+}
+dt.past a {
+  font-style: normal;
+}
+dd {
+  margin-left: 1em;
+  padding-left: 0;
+  margin-top: .5em;
+}
+dd.more {
+  margin-left: 1.25em;
+  padding-left: 0;
+  font-size: .8em;
+}
+
+div#agenda h3 { 
+font-size: 1.6em;
+font-weight: normal;
+margin: 0 0 10px 0;
+}
+
+/** DURHAM **/
+#durham div#header {
+  background: url(/images/durham/description.png) no-repeat 105% 40px;
+}
+#durham.no_register div#header {
+  background: url(/images/durham/description.png) no-repeat 105% 120px;
+}
+#durham span#logo {
+  background: url(/images/durham/logo.png) no-repeat left top;
+}
+#durham div#wrapper { 
+  background: url(/images/durham/header_back.jpg) no-repeat center top; 
+}
+
+/** DC **/
+#dc div#header {
+  background: none;
+}
+#dc.no_register div#header {
+  background: url(/images/dc/description.png) no-repeat 105% 120px;
+}
+#dc span#logo {
+  background: url(/images/dc/logo.png) no-repeat left top;
+}
+#dc div#wrapper { 
+  background: url(/images/dc/header_back.png) no-repeat center top; 
+}
