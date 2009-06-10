@@ -312,3 +312,17 @@ margin: 0 0 10px 0;
 #dc div#wrapper { 
   background: url(/images/dc/header_back.png) no-repeat center top; 
 }
+
+/** BOSTON **/
+#boston div#header {
+  background: none;
+}
+#boston.no_register div#header {
+  background: url(/images/boston/description.png) no-repeat 105% 120px;
+}
+#boston span#logo {
+  background: url(/images/boston/logo.png) no-repeat left top;
+}
+#boston div#wrapper { 
+  background: url(/images/boston/header_back.png) no-repeat center top; 
+}
