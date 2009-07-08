@@ -285,6 +285,11 @@ font-weight: normal;
 margin: 0 0 10px 0;
 }
 
+ul.bulleted {
+  list-style-type: disc;
+  padding: 0 0 1em 1.25em;
+}
+
 /** DURHAM **/
 #durham div#header {
   background: url(/images/durham/description.png) no-repeat 105% 40px;
