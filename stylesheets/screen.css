@@ -289,6 +289,9 @@ ul.bulleted {
   list-style-type: disc;
   padding: 0 0 1em 1.25em;
 }
+ul.left {
+  margin-left: 1.5em;
+}
 
 /** DURHAM **/
 #durham div#header {
