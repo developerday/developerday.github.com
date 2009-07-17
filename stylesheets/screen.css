@@ -323,7 +323,7 @@ ul.left {
 
 /** BOSTON **/
 #boston div#header {
-  background: none;
+  background: url(/images/boston/description.png) no-repeat 100% 45px;
 }
 #boston.no_register div#header {
   background: url(/images/boston/description.png) no-repeat 105% 120px;
@@ -333,4 +333,8 @@ ul.left {
 }
 #boston div#wrapper { 
   background: url(/images/boston/header_back.png) no-repeat center top; 
+}
+#boston div#map {
+  height: 450px;
+  width: 400px;
 }
