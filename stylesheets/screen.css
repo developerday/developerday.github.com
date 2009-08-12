@@ -31,147 +31,74 @@
 
 
 body {
-  background: white url(/images/repeat-bg.jpg) 0 0 repeat-x;
+  background: white url(../images/bg-repeat.jpg) 0 0 repeat-x;
   font-family: "helvetica neue", helvetica, verdana, sans-serif;
-  font-size: .95em;
+  font-size: .85em;
   padding: 0px; 
   margin: 0px;
-  color: #313131;
+  color: #666666;
 }
-
 img { border: 0px; }
+p {line-height: 1.2em;margin-top: 0;}
+a {color: #369;}
+h2 {
+  height: 95px;
+  margin: 40px 0 20px 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -1000em;
+}
+h3 { 
+font-size: 1.6em;
+font-family: "Chaparral Pro", "Lucida Bright", "Lucidabright", "Lucida Serif", "Lucida", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+font-weight: normal;
+color: #336699;
+margin: 20px 0px 0px;
+}
+h4 {font-size: .9em; margin-bottom: 0;}
 
-
-div#inner-wrapper { 
-margin: 0px auto;
-background: url(/images/repeat-bg-footer.jpg) repeat-x center bottom; 
+textarea, input{
+	background: url(../images/bg_input_white.gif) center bottom repeat-x;
+	color: #3C3C3C;
+	font: 1em;
+	border: 1px solid #C0BEBE;
 }
 
 
-p {
-  line-height: 1.2em;
+/* @group Content */
+
+div#content{
+	margin: 0 auto;
+	width: 937px;
+  	padding-right: 20px;
 }
-div#header, div#content, div#footer {
+
+/* @end */
+
+
+
+
+/* @group Register */
+
+div.wrapper{
+	background: url(../images/header_back.png) top center no-repeat;
+}
+#dc div.wrapper{
+	background: url(../images/dc/dc-header.jpg) top center no-repeat;
+}
+#durham div.wrapper{
+	background: url(../images/durham/durham-header.jpg) top center no-repeat;
+}
+
+/* @group header */
+div#header {
   margin: 0 auto;
-  width: 840px;
+  width: 920px;
   padding-right: 20px;
-}
-div#main {
-  background: transparent url(/images/footer_back.png) no-repeat center bottom;
-  
 }
 
 div#header {
-  height: 300px;
-}
-div#footer {
-  height: 165px;
-}
-a {
-  color: #369;
-}
-
-
-th {
-  font-weight: normal;
-  padding-top: 1em;
-  text-align: center;
-  width: 150px;
-}
-
-th, td {
-  border-bottom: 1px solid #ccc;
-  text-align: top;
-}
-
-tr {
-  padding: 20px 0; 
-  vertical-align: text-top;
-}
-
-th img {
-  background: url(/images/bio_pic_outline.png) no-repeat left top;
-  padding: 5px 6px;
-  clear: both;
-}
-
-h3.single {
-  margin-bottom: 1em;
-}
-h4 {
-  font-size: .9em;
-  margin-bottom: 0;
-}
-p {
-  margin-top: 0;
-}
-p.bio {
-  font-size: .8em;
-  margin-bottom: 1.5em;
-}
-p.more {
-  font-size: .8em;
-  margin-top: -0.5em;
-}
-
-div#questions {
-  clear: left;
-}
-div#map {
-  float: left;
-  height: 390px;
-  width: 570px;
-}
-div#map a {
-  clear: left;
-  display: block;
-  font-size: .8em;
-}
-
-address {
-  font-size: .8em;
-  font-style: normal;
-  margin-bottom: 1em;
-}
-address a {
-  font-weight: bold;
-}
-address a {
-  font-weight: bold;
-}
-
-ul#nav {
-  width: 1012px;
-  height:  64px;	
-  list-style-type: none;
-  margin: 20px 0 0 0;
-  padding-left: 90px;
-  z-index: 3;
-  position: relative;
-  top: 0px; 
-  left: -78px;
-  background: url(/images/nav-banner.png) 0 0 no-repeat;
-}
-
-ul#nav li {
-  display: block;
-  font-size: 1.8em;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  float: left;
-  line-height: 74px;
-  vertical-align: middle;
-  background: url(/images/nav-seperator.gif) center right no-repeat;
-  margin-right: 25px;
-  padding-right: 25px;
-}
-
-ul#nav li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-ul#nav li a:hover {
-  text-decoration: underline;
+  height: 285px;
 }
 
 span#logo {
@@ -185,51 +112,6 @@ span#logo {
   width: 507px;
 }
 
-h2 {
-  height: 95px;
-  margin: 40px 0 20px 0;
-  overflow: hidden;
-  padding: 0;
-  text-indent: -1000em;
-}
-div#intro     h2 { margin-top: 10px; background: url(/images/header_connect.gif)   no-repeat left bottom; }
-div#agenda    h2 { background: url(/images/header_agenda.gif)    no-repeat left bottom; }
-div#venue     h2 { background: url(/images/header_location.gif)  no-repeat left bottom; }
-div#questions h2 { background: url(/images/header_questions.png) no-repeat left bottom; height: 60px;}
-div#bodycontent.event h2 { background: url(/images/header_events.gif) no-repeat left bottom; height: 60px;}
-div#bodycontent.about h2 { background: url(/images/header_about.gif) no-repeat left bottom; height: 60px;}
-
-h3 { 
-font-size: 1.8em;
-font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-color: #336699;
-}
-
-div#intro p {
-  margin-left: 20px;
-  width: 760px;
-}
-
-div#questions {
-  padding-bottom: 20px;
-}
-
-div#bodycontent p {
-  margin-left: 20px;
-  width: 760px;
-}
-
-
-div#footer {
-  color: white;
-  position: relative;
-  top: 60px;
-}
-div#footer img {
-  margin: -10px 10px 0 20px;
-  vertical-align: middle;
-}
-
 a#register {
   display: block;
   margin-left: 150px;
@@ -240,19 +122,684 @@ a#register {
 .no_register a#register {
   display: none;
 }
-.no_register ul#nav li.reg {
+.no_register li.reg {
   display: none;
 }
 
 
-p#filler {
-  height: 350px;
+/* @end */
+
+/* @group Primary Nav */
+
+#nav{
+	background: url(../images/nav-bg.png) 0 0 no-repeat;
+	width: 984px;
+	height: 77px;	
+	margin: 0 auto;
+	padding: 0px 42px 0px 0px;
+	position: relative;
+	z-index: 100;
 }
-#about p#filler {
-  height: 480px;
+
+#nav ul#primary-nav{
+	padding: 20px 0px 0px 25px;
 }
-#events p#filler {
-  height: 450px;
+
+#nav ul#primary-nav li{
+	float: left;
+	text-indent: -9999px;
+}
+
+ul#primary-nav li a{
+	background: url(../images/nav.png) 0 0 no-repeat;
+	display: block;
+	height: 29px;
+}
+
+ul#primary-nav #nav-home a{
+	width: 86px;
+	}
+ul#primary-nav #nav-home a:hover{background-position: 0 -29px;}
+
+ul#primary-nav #nav-about a{
+	background-position: -86px 0px;
+	width: 88px;
+}
+ul#primary-nav #nav-about a:hover{background-position: -86px -29px;}
+
+ul#primary-nav #nav-events a{
+	background-position: -175px 0px;
+	width: 95px;
+}
+.no_register ul#primary-nav #nav-events a{
+  width: 105px;
+}
+ul#primary-nav #nav-events a:hover{background-position: -175px -29px;}
+
+ul#primary-nav #nav-register a{
+	background-position: -356px 0px;
+	width: 120px;
+}
+ul#primary-nav #nav-register a:hover{background-position: -356px -29px;}
+
+ul#primary-nav #nav-contact a{
+	background-position: -472px 0px;
+	width: 120px;
+}
+ul#primary-nav #nav-contact a:hover{background-position: -472px -29px;}
+
+
+
+span#social-elements{	
+	color: #aedfff;
+	font-size: 11px;
+	float: right;
+	padding: 6px 21px 0 0;
+}
+
+ul#share-nav li{
+	float: right;
+	padding: 0px 3px;
+}
+
+ul#share-nav li a{
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+/* @end */
+
+
+
+/* @group Main Content */
+
+div#content{
+	padding: 35px 0px 0px 0px;
+}
+
+/* @group Main content(left) */
+
+/* @group Events Nav */
+
+#event-nav{
+	display: block;
+	padding: 0px 0px 20px 0px;
+}
+
+#event-nav ul li{
+	float: left;
+	text-indent: -9999px;	
+}
+
+#event-nav-boston{
+	padding-right: 10px;
+}
+#event-nav-boston a{
+	background: url(../images/events-nav-boston.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boston a:hover{background-position: 0 -113px;}
+
+#event-nav-falls-church{
+	padding-right: 10px;
+}
+
+#event-nav-falls-church a{
+	background: url(../images/events-nav-falls-church.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-falls-church a:hover{background-position: 0 -113px;}
+
+#event-nav-durham a{
+	background: url(../images/events-nav-durham.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-durham a:hover{background-position: 0 -113px;}
+
+/* @end */
+
+div#main-content{
+	width: 595px;	
+	float: left;
+	padding-right: 30px;
+	background: url(../images/sidebar-shadow.jpg) top right no-repeat;
+}
+
+h1#join-boston{
+	background: url(../images/join-us-boston-header.jpg) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	margin: 0px 0px 20px 0px;
+}
+
+#agenda {
+	padding: 10px 0px 20px 0px;
+}
+
+#agenda th, #agenda td{
+	border-top: 1px solid #e7e7e7;
+  	padding: 0px;
+  	margin: 0px;
+  	height: 86px;
+}
+
+#agenda th{
+	padding: 10px;
+}
+
+#agenda td{
+	width: 488px;
+}
+
+#agenda tr:hover, #agenda tr.keynote:hover{
+	background: url(../images/agenda-arrow.png) 540px 10px #d8e5ec no-repeat;
+}
+
+tr.keynote{
+	background: #f4f0d9;
+}
+#agenda th img {
+  clear: both;
+  padding: 5px 5px 5px 6px;
+  background: url(../images/people/bio_pic_outline.png) 0 0 no-repeat;
+}
+
+#agenda a{
+	color: #666666;
+}
+#agenda h3, #agenda h4{
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+.important a{
+	color: #d36c18;
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Aside */
+
+#aside{
+	width: 245px;
+	float: left;
+	padding-left: 15px;
+}
+
+#aside h4{
+	font-family: "Chaparral Pro", "Lucida Bright", "Lucidabright", "Lucida Serif", "Lucida", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #578ba6;
+	padding: 0px 0px 10px 0px;
+}
+
+#people-talking{
+	padding: 35px 0px 10px 0px;
+}
+
+#people-talking p{
+	background: url(../images/people-talking-bg.jpg) 0 0 no-repeat;
+	padding: 22px;
+}
+
+#partners {
+  margin-top: 50px;
+}
+#partners .aside-sub-title{
+	font-family: "Chaparral Pro", "Lucida Bright", "Lucidabright", "Lucida Serif", "Lucida", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #8d8d8d;
+	padding: 0px 0px 10px 0px;
+}
+
+#partners img{
+	padding: 10px 10px 20px;
+}
+
+#aside h3.sec-nav-header{
+	color: #d36c18;
+	font-size: 16px;
+	font-family: "Arial";
+	padding: 0px 0px 0px 0px;
+}
+
+#aside #aside-sec-nav #aside-events li{
+	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	padding: 10px 0px 10px 24px;
+	margin: 10px 0px -11px -24px;
+}
+
+#aside #aside-sec-nav #aside-events a, #aside-events-current a{
+	text-decoration: none;
+	color: #666666;
+}
+
+#aside #aside-sec-nav #aside-events li:hover{
+	background: #f1f1f1;
+}
+
+#aside #aside-sec-nav #aside-events-current{
+	padding: 0px 0px 20px 0px;	
+}
+
+#aside #aside-sec-nav #aside-events-current li{
+	background: #f1f1f1;
+	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	padding: 10px 0px 10px 24px;
+	margin: 10px 0px 10px -24px;
+}
+
+#bring-us-to-your-city{
+	padding: 50px 0px 50px 0px; 
+}
+
+
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @group Footer */
+
+div#footer {
+  height: 308px;
+  margin: 0 auto;
+  padding-right: 20px;
+  margin-top: -140px;
+  background: url(../images/footer_back.png) center bottom no-repeat;
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
+div#footer #footer-content{
+	padding-top: 195px;
+	text-align: center;
+	width: 919px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+div#footer #footer-content p{
+	float: left;
+}
+
+div#footer #footer-nav{
+	float: right;
+	padding-right: 30px;
+}
+
+div#footer #footer-nav li{
+	float: left;
+	padding: 0px 5px;
+}
+
+div#footer a{
+	color: #a8a8a8;
+	text-decoration: none;
+}
+
+/* @end */
+
+
+
+
+
+/* @group Interior */
+
+h3.interior-header{
+	color: #d36c18;
+}
+
+#talk-schedule td{
+	border-top: 1px solid #cccccc;
+	vertical-align: text-top;
+	padding: 10px 0px;
+}
+
+#talk-schedule .event-speaker{
+	width: 85px;
+	padding: 10px;
+	text-align: center;
+}
+
+#talk-schedule .talk-time{
+	font-weight: normal;
+	padding: 0px 0px 5px;
+	margin: 0px;
+}
+
+#talk-schedule h3.talk-title{
+	padding: 0px 0px 10px;
+	margin: 0px;
+}
+
+#talk-schedule td img {
+  clear: both;
+  padding: 5px 6px 6px 6px;
+  background: url(../images/people/bio_pic_outline.png) 0 0 no-repeat;
+}
+
+ul.bulleted {
+  list-style-type: disc;
+  padding: 0 0 1em 1.25em;
+}
+
+.speaker-bio{
+	font-size: 11px;
+}
+
+h1#connect-learn-share{
+	background: url(../images/connect-learn-share.jpg) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	padding: 0px 0px 20px 0px;
+}
+
+.speakerrate{
+	font-size: 11px;
+}
+/* @end */
+
+/* @group Venue */
+
+#venue{
+	
+}
+
+/* @end */
+
+/* @group Map */
+
+div#map {
+  height: 351px;
+  width: 332px;
+  float: left;
+  padding-right: 25px;
+}
+
+div.address{
+	width: 237px;
+	float: left;
+}
+
+address{
+	font-weight: bold;
+}
+/* @end */
+
+/* @group Questions */
+
+h3.questions {
+	font-size: 17px;
+	color: #d36c18;
+	margin: 30px 0px 0px;
+}
+
+/* @end */
+
+/* @group About */
+
+#another-dev-day{
+	background: url(../images/another-dev-day.jpg) 0 0 no-repeat;
+	width: 586px;
+	height: 56px;
+	text-indent: -9999px;
+}
+
+/* @end */
+
+/* @group Events */
+#dev-day-header {
+	background: url(../images/dev-day-header.jpg) 0 0 no-repeat;
+	text-indent: -9990px;
+	width: 586px;
+	height: 56px;
+}
+
+
+/* @end */
+
+/* @group Contacts */
+
+#contact-form fieldset{
+	border: none;
+	padding: 10px 0px 0px 0px;
+}
+
+#contact-form li{
+	padding: 10px 0px;
+}
+
+#contact-form .row{
+	padding: 10px 0px;
+}
+
+#contact-form .row label{
+	vertical-align: top;
+}
+
+#contact-form #name{
+	margin: 0px 0px 0px 48px;
+	padding: 5px;
+	width: 250px;
+}
+
+#contact-form #email{
+	margin: 0px 0px 0px 50px;
+	padding: 5px;
+	width: 250px;
+}
+
+#contact-form #phone{
+	margin: 0px 0px 0px 45px;
+	padding: 5px;
+	width: 250px;
+}
+
+#contact-form #company{
+	margin: 0px 0px 0px 26px;
+	padding: 5px;
+	width: 250px;
+}
+
+#contact-form #contact-note{
+	margin: 10px 0px 0px 12px;
+	width: 262px;
+}
+
+#contact-form .contact-note label{
+	margin: 0px 0px -10px 0px;
+}
+
+#contact-form #submit-btn{
+	margin: 14px 0px 0px 86px;
+	border: none;
+}
+
+/* @end */
+
+/* @group email form */
+
+#email #email-form{
+	background: #FFF;
+	padding: 20px 15px 20px 20px;
+	margin: 0px;
+	width: 389px;
+	overflow: hidden;
+}
+
+#email #email-form fieldset{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#email #email-form .row{
+	padding: 10px 0px;
+}
+
+#email #email-form .row label{
+	vertical-align: top;
+}
+
+#email #email-form #name{
+	margin: 0px 0px 0px 50px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #sender{
+	margin: 0px 0px 0px 53px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #their_name{
+	margin: 0px 0px 0px 47px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #their_name{
+	margin: 0px 0px 0px 46px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #recipient{
+	margin: 0px 0px 0px 50px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #contact-note{
+	margin: 0px 0px 0px 42px;
+	padding: 5px;
+	width: 250px;
+}
+
+#email #email-form #submit-btn{
+	border: none;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	background-color: #ffffff;
+	margin-right: 5px;
+}
+
+#email-form h3{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+/* @group Durham */
+
+#durham div#header {
+  background: url(../images/durham/description.png) no-repeat 105% 40px;
+}
+#durham.no_register div#header {
+  background: url(../images/durham/description.png) no-repeat 96% 105px;
+}
+#durham span#logo {
+  background: url(../images/durham/logo.png) no-repeat left top;
+}
+#durham div#wrapper { 
+  background: url(../images/durham/header_back.jpg) no-repeat center top; 
+}
+
+/* @end */
+
+
+
+/* @group DC */
+
+#dc div#header {
+  background: none;
+}
+#dc.no_register div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 105px;
+}
+#dc span#logo {
+  background: url(../images/dc/logo.png) no-repeat left top;
+}
+#dc div#wrapper { 
+  background: url(../images/dc/header_back.png) no-repeat center top; 
+}
+
+/* @end */
+
+
+
+/* @group Boston */
+
+#boston div#header {
+  background: url(../images/boston/description.png) no-repeat 96% 45px;
+}
+#boston.no_register div#header {
+  background: url(../images/boston/description.png) no-repeat 96% 105px;
+}
+#boston span#logo {
+  background: url(../images/boston/logo.png) no-repeat left top;
+}
+#boston div#wrapper { 
+  background: url(../images/boston/header_back.png) no-repeat center top; 
+}
+
+/* @end */
+
+
+/* @group Flickr */
+
+
+     #flickr_badge_uber_wrapper { width: 252px;}
+     #flickr_badge_wrapper { padding: 0 0 10px 0;}
+     .flickr_badge_image {float: left; margin: 0 9px 9px 0;}
+     .flickr_badge_image img {}
+     #flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+     #flickr_badge_uber_wrapper a:hover,
+     #flickr_badge_uber_wrapper a:link,
+     #flickr_badge_uber_wrapper a:active,
+     #flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+     #flickr_badge_wrapper {}
+     #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+
+
+/* @end */
+
+
+
+
+div#map a {
+  clear: left;
+  display: block;
+  font-size: .8em;
 }
 
 dl {
@@ -277,64 +824,4 @@ dd.more {
   margin-left: 1.25em;
   padding-left: 0;
   font-size: .8em;
-}
-
-div#agenda h3 { 
-font-size: 1.6em;
-font-weight: normal;
-margin: 0 0 10px 0;
-}
-
-ul.bulleted {
-  list-style-type: disc;
-  padding: 0 0 1em 1.25em;
-}
-ul.left {
-  margin-left: 1.5em;
-}
-
-/** DURHAM **/
-#durham div#header {
-  background: url(/images/durham/description.png) no-repeat 105% 40px;
-}
-#durham.no_register div#header {
-  background: url(/images/durham/description.png) no-repeat 105% 120px;
-}
-#durham span#logo {
-  background: url(/images/durham/logo.png) no-repeat left top;
-}
-#durham div#wrapper { 
-  background: url(/images/durham/header_back.jpg) no-repeat center top; 
-}
-
-/** DC **/
-#dc div#header {
-  background: none;
-}
-#dc.no_register div#header {
-  background: url(/images/dc/description.png) no-repeat 105% 120px;
-}
-#dc span#logo {
-  background: url(/images/dc/logo.png) no-repeat left top;
-}
-#dc div#wrapper { 
-  background: url(/images/dc/header_back.png) no-repeat center top; 
-}
-
-/** BOSTON **/
-#boston div#header {
-  background: url(/images/boston/description.png) no-repeat 100% 45px;
-}
-#boston.no_register div#header {
-  background: url(/images/boston/description.png) no-repeat 105% 120px;
-}
-#boston span#logo {
-  background: url(/images/boston/logo.png) no-repeat left top;
-}
-#boston div#wrapper { 
-  background: url(/images/boston/header_back.png) no-repeat center top; 
-}
-#boston div#map {
-  height: 450px;
-  width: 400px;
 }
