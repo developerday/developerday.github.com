@@ -1,6 +1,30 @@
 {% if page.twitter %}
 <div id="people-talking">
   <h4>PEOPLE ARE TALKING:</h4>
-  <p>Developer Day is going to  be so awesome, I can't wait to see John Resig speak. He is so crazy smart and talented!</p>
+  <div id="twtr-search-widget"></div>
+  <script src="http://widgets.twimg.com/j/1/widget.js"></script>
+  <link href="http://widgets.twimg.com/j/1/widget.css" type="text/css" rel="stylesheet">
+  <script>
+  new TWTR.Widget({
+    search: '#developer_day',
+    id: 'twtr-search-widget',
+    loop: true,
+    title: '',
+    subject: '',
+    width: 250,
+    height: 300,
+    theme: {
+      shell: {
+        background: '#3082af',
+        color: '#ffffff'
+      },
+      tweets: {
+        background: '#ffffff',
+        color: '#444444',
+        links: '#1985b5'
+      }
+    }
+  }).render().start();
+  </script>
 </div>
 {% endif %}
