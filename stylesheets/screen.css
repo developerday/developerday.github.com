@@ -242,7 +242,7 @@ div#content{
 	width: 189px;
 	height: 113px;
 }
-#event-nav-boston a:hover{background-position: 0 -113px;}
+#event-nav-boston a:hover{background-position: 0 -226px;}
 
 #event-nav-falls-church{
 	padding-right: 10px;
@@ -255,7 +255,7 @@ div#content{
 	width: 189px;
 	height: 113px;
 }
-#event-nav-falls-church a:hover{background-position: 0 -113px;}
+#event-nav-falls-church a:hover{background-position: 0 -226px;}
 
 #event-nav-durham a{
 	background: url(../images/events-nav-durham.jpg) 0 0 no-repeat;
@@ -264,7 +264,7 @@ div#content{
 	width: 189px;
 	height: 113px;
 }
-#event-nav-durham a:hover{background-position: 0 -113px;}
+#event-nav-durham a:hover{background-position: 0 -226px;}
 
 /* @end */
 
