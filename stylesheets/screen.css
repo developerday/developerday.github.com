@@ -80,14 +80,17 @@ div#content{
 
 /* @group Register */
 
-div.wrapper{
-	background: url(../images/header_back.png) top center no-repeat;
-}
 #dc div.wrapper{
 	background: url(../images/dc/dc-header.jpg) top center no-repeat;
 }
 #durham div.wrapper{
 	background: url(../images/durham/durham-header.jpg) top center no-repeat;
+}
+#boston div.wrapper {
+	background: url(../images/boston/boston-header.jpg) top center no-repeat;
+}
+#boulder div.wrapper {
+	background: url(../images/boulder/boulder-header.jpg) top center no-repeat;
 }
 
 /* @group header */
@@ -232,7 +235,19 @@ div#content{
 	text-indent: -9999px;	
 }
 
-#event-nav-boston{
+#event-nav-boulder{
+	padding-right: 10px;
+}
+#event-nav-boulder a{
+	background: url(../images/events-nav-boulder.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boulder a:hover{background-position: 0 -226px;}
+
+.event-nav-padded{
 	padding-right: 10px;
 }
 #event-nav-boston a{
@@ -243,10 +258,6 @@ div#content{
 	height: 113px;
 }
 #event-nav-boston a:hover{background-position: 0 -226px;}
-
-#event-nav-falls-church{
-	padding-right: 10px;
-}
 
 #event-nav-falls-church a{
 	background: url(../images/events-nav-falls-church.jpg) 0 0 no-repeat;
@@ -273,6 +284,14 @@ div#main-content{
 	float: left;
 	padding-right: 30px;
 	background: url(../images/sidebar-shadow.jpg) top right no-repeat;
+}
+
+h1#join-boulder{
+	background: url(../images/boulder/join-us-header.png) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	margin: 0px 0px 20px 0px;
 }
 
 h1#join-boston{
@@ -770,6 +789,23 @@ h3.questions {
 }
 #boston div#wrapper { 
   background: url(../images/boston/header_back.png) no-repeat center top; 
+}
+
+/* @end */
+
+/* @group Boulder */
+
+#boulder div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 45px;
+}
+#boulder.no_register div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 105px;
+}
+#boulder span#logo {
+  background: url(../images/boulder/boulder-sign.gif) no-repeat left top;
+}
+#boulder div#wrapper { 
+  background: url(../images/boulder/boulder-header.jpg) no-repeat center top; 
 }
 
 /* @end */
