@@ -209,6 +209,45 @@ div#content{
 	text-indent: -9999px;	
 }
 
+#event-nav-boulder a{
+	background: url(../images/events-nav-boulder.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boulder a:hover{background-position: 0 -226px;}
+
+.event-nav-padded{
+	padding-right: 10px;
+}
+#event-nav-boston a{
+	background: url(../images/events-nav-boston.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boston a:hover{background-position: 0 -226px;}
+
+#event-nav-falls-church a{
+	background: url(../images/events-nav-falls-church.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-falls-church a:hover{background-position: 0 -226px;}
+
+#event-nav-durham a{
+	background: url(../images/events-nav-durham.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-durham a:hover{background-position: 0 -226px;}
+
 /* @end */
 
 div#main-content{
@@ -219,6 +258,26 @@ div#main-content{
 }
 
 h1#title, h1#title-coming-soon {
+  	width: 589px;
+  	height: 56px;
+  	width: 592px;
+  	height: 81px;
+  	text-indent: -9999px;
+  	margin: 0px 0px 20px 0px;
+  }
+
+h1#join-boulder{
+	background: url(../images/boulder/join-us-header.png) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	margin: 0px 0px 20px 0px;
+}
+
+h1#join-boston{
+	background: url(../images/join-us-boston-header.jpg) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
 	width: 592px;
 	height: 81px;
 	text-indent: -9999px;
@@ -727,9 +786,6 @@ h3.questions {
 #dc div.wrapper{
 	background: url(../images/dc/dc-header.jpg) top center no-repeat;
 }
-#event-nav-falls-church{
-	padding-right: 10px;
-}
 
 #event-nav-falls-church a{
 	background: url(../images/events-nav-falls-church.jpg) 0 0 no-repeat;
@@ -760,9 +816,6 @@ h3.questions {
 #boston div.wrapper{
 	background: url(../images/boston/boston-header.jpg) top center no-repeat;
 }
-#event-nav-boston{
-	padding-right: 10px;
-}
 #event-nav-boston a{
 	background: url(../images/events-nav-boston.jpg) 0 0 no-repeat;
 	display: block;
@@ -777,6 +830,51 @@ h3.questions {
 
 /* @end */
 
+/* @group Boulder */
+
+#boulder div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 45px;
+}
+#boulder.no_register div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 105px;
+}
+#boulder span#logo {
+  background: url(../images/boulder/boulder-sign.gif) no-repeat left top;
+}
+#boulder div#wrapper { 
+  background: url(../images/boulder/boulder-header.jpg) no-repeat center top; 
+}
+
+/* @end */
+
+
+/* @group Flickr */
+
+
+     #flickr_badge_uber_wrapper { width: 252px;}
+     #flickr_badge_wrapper { padding: 0 0 10px 0;}
+     .flickr_badge_image {float: left; margin: 0 9px 9px 0;}
+     .flickr_badge_image img {}
+     #flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+     #flickr_badge_uber_wrapper a:hover,
+     #flickr_badge_uber_wrapper a:link,
+     #flickr_badge_uber_wrapper a:active,
+     #flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+     #flickr_badge_wrapper {}
+     #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+
+
+/* @end */
+
+
+
+
+div#map a {
+  clear: left;
+  display: block;
+  font-size: .8em;
+	background: #f1f1f1;
+}
 #boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
 	background: #f1f1f1;
 }
