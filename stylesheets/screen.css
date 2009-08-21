@@ -60,7 +60,7 @@ h4 {font-size: .9em; margin-bottom: 0;}
 textarea, input{
 	background: url(../images/bg_input_white.gif) center bottom repeat-x;
 	color: #3C3C3C;
-	font: 1em;
+	font-size: 1em;
 	border: 1px solid #C0BEBE;
 }
 
@@ -75,11 +75,11 @@ div#content{
 
 /* @end */
 
+/* @group Header */
 
-
-
-/* @group Register */
-
+div.wrapper{
+	background: url(../images/header_back.png) top center no-repeat;
+}
 #dc div.wrapper{
 	background: url(../images/dc/dc-header.jpg) top center no-repeat;
 }
@@ -93,17 +93,12 @@ div#content{
 	background: url(../images/boulder/boulder-header.jpg) top center no-repeat;
 }
 
-/* @group header */
 div#header {
   margin: 0 auto;
   width: 920px;
   padding-right: 20px;
+   height: 285px;
 }
-
-div#header {
-  height: 285px;
-}
-
 span#logo {
   height: 267px;
   left: 50%;
@@ -129,9 +124,6 @@ a#register {
   display: none;
 }
 
-
-/* @end */
-
 /* @group Primary Nav */
 
 #nav{
@@ -143,16 +135,13 @@ a#register {
 	position: relative;
 	z-index: 100;
 }
-
 #nav ul#primary-nav{
 	padding: 20px 0px 0px 25px;
 }
-
 #nav ul#primary-nav li{
 	float: left;
 	text-indent: -9999px;
 }
-
 ul#primary-nav li a{
 	background: url(../images/nav.png) 0 0 no-repeat;
 	display: block;
@@ -190,8 +179,6 @@ ul#primary-nav #nav-contact a{
 	width: 120px;
 }
 ul#primary-nav #nav-contact a:hover{background-position: -472px -29px;}
-
-
 
 span#social-elements{	
 	color: #aedfff;
@@ -235,9 +222,6 @@ div#content{
 	text-indent: -9999px;	
 }
 
-#event-nav-boulder{
-	padding-right: 10px;
-}
 #event-nav-boulder a{
 	background: url(../images/events-nav-boulder.jpg) 0 0 no-repeat;
 	display: block;
@@ -250,6 +234,15 @@ div#content{
 .event-nav-padded{
 	padding-right: 10px;
 }
+#event-nav-boulder a{
+	background: url(../images/events-nav-boulder.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boulder a:hover{background-position: 0 -226px;}
+
 #event-nav-boston a{
 	background: url(../images/events-nav-boston.jpg) 0 0 no-repeat;
 	display: block;
@@ -286,6 +279,15 @@ div#main-content{
 	background: url(../images/sidebar-shadow.jpg) top right no-repeat;
 }
 
+h1#title, h1#title-coming-soon {
+  	width: 589px;
+  	height: 56px;
+  	width: 592px;
+  	height: 81px;
+  	text-indent: -9999px;
+  	margin: 0px 0px 20px 0px;
+  }
+
 h1#join-boulder{
 	background: url(../images/boulder/join-us-header.png) 0 0 no-repeat;
 	width: 589px;
@@ -298,10 +300,14 @@ h1#join-boston{
 	background: url(../images/join-us-boston-header.jpg) 0 0 no-repeat;
 	width: 589px;
 	height: 56px;
+	width: 592px;
+	height: 81px;
 	text-indent: -9999px;
 	margin: 0px 0px 20px 0px;
 }
-
+h1#title-coming-soon {
+	background: url(../images/comingsoon-title.png) 0 0 no-repeat;
+}
 #agenda {
 	padding: 10px 0px 20px 0px;
 }
@@ -346,6 +352,31 @@ tr.keynote{
 .important a{
 	color: #d36c18;
 	font-weight: bold;
+}
+
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+dt {
+  margin-top: 1em;
+}
+dt.past {
+  font-style: italic;
+}
+dt.past a {
+  font-style: normal;
+}
+dd {
+  margin-left: 1em;
+  padding-left: 0;
+  margin-top: .5em;
+}
+dd.more {
+  margin-left: 1.25em;
+  padding-left: 0;
+  font-size: .8em;
 }
 
 /* @end */
@@ -397,38 +428,47 @@ tr.keynote{
 	padding: 0px 0px 0px 0px;
 }
 
-#aside #aside-sec-nav #aside-events li{
+#aside-events li{
 	border-bottom: 1px solid #ebebeb;
 	border-top: 1px solid #ebebeb;
 	padding: 10px 0px 10px 24px;
 	margin: 10px 0px -11px -24px;
 }
 
-#aside #aside-sec-nav #aside-events a, #aside-events-current a{
+#aside-events a {
 	text-decoration: none;
 	color: #666666;
 }
 
-#aside #aside-sec-nav #aside-events li:hover{
+#aside-events li:hover{
 	background: #f1f1f1;
 }
 
-#aside #aside-sec-nav #aside-events-current{
-	padding: 0px 0px 20px 0px;	
-}
-
-#aside #aside-sec-nav #aside-events-current li{
-	background: #f1f1f1;
-	border-bottom: 1px solid #ebebeb;
-	border-top: 1px solid #ebebeb;
-	padding: 10px 0px 10px 24px;
-	margin: 10px 0px 10px -24px;
+#aside-events.current {
+	padding: 0px 0px 40px 0px;
 }
 
 #bring-us-to-your-city{
 	padding: 50px 0px 50px 0px; 
 }
 
+/* @group Flickr */
+
+
+     #flickr_badge_uber_wrapper { width: 252px;}
+     #flickr_badge_wrapper { padding: 0 0 10px 0;}
+     .flickr_badge_image {float: left; margin: 0 9px 9px 0;}
+     .flickr_badge_image img {}
+     #flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+     #flickr_badge_uber_wrapper a:hover,
+     #flickr_badge_uber_wrapper a:link,
+     #flickr_badge_uber_wrapper a:active,
+     #flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+     #flickr_badge_wrapper {}
+     #flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+
+
+/* @end */
 
 /* @end */
 
@@ -538,14 +578,6 @@ h1#connect-learn-share{
 }
 /* @end */
 
-/* @group Venue */
-
-#venue{
-	
-}
-
-/* @end */
-
 /* @group Map */
 
 div#map {
@@ -554,14 +586,17 @@ div#map {
   float: left;
   padding-right: 25px;
 }
-
 div.address{
 	width: 237px;
 	float: left;
 }
-
 address{
 	font-weight: bold;
+}
+div#map a {
+  clear: left;
+  display: block;
+  font-size: .8em;
 }
 /* @end */
 
@@ -593,7 +628,6 @@ h3.questions {
 	width: 586px;
 	height: 56px;
 }
-
 
 /* @end */
 
@@ -730,14 +764,6 @@ h3.questions {
 }
 /* @end */
 
-
-
-
-
-
-
-
-
 /* @group Durham */
 
 #durham div#header {
@@ -749,13 +775,23 @@ h3.questions {
 #durham span#logo {
   background: url(../images/durham/logo.png) no-repeat left top;
 }
-#durham div#wrapper { 
-  background: url(../images/durham/header_back.jpg) no-repeat center top; 
+#durham div.wrapper{
+	background: url(../images/durham/durham-header.jpg) top center no-repeat;
+}
+#event-nav-durham a{
+	background: url(../images/events-nav-durham.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-durham a:hover{background-position: 0 -226px;}
+
+#durham h1#title {
+	background: url(../images/durham/page-title.png) 0 0 no-repeat;
 }
 
 /* @end */
-
-
 
 /* @group DC */
 
@@ -768,13 +804,25 @@ h3.questions {
 #dc span#logo {
   background: url(../images/dc/logo.png) no-repeat left top;
 }
-#dc div#wrapper { 
-  background: url(../images/dc/header_back.png) no-repeat center top; 
+
+#dc div.wrapper{
+	background: url(../images/dc/dc-header.jpg) top center no-repeat;
+}
+
+#event-nav-falls-church a{
+	background: url(../images/events-nav-falls-church.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-falls-church a:hover{background-position: 0 -226px;}
+
+#dc h1#title {
+	background: url(../images/dc/page-title.png) 0 0 no-repeat;
 }
 
 /* @end */
-
-
 
 /* @group Boston */
 
@@ -787,8 +835,36 @@ h3.questions {
 #boston span#logo {
   background: url(../images/boston/logo.png) no-repeat left top;
 }
-#boston div#wrapper { 
-  background: url(../images/boston/header_back.png) no-repeat center top; 
+#boston div.wrapper{
+	background: url(../images/boston/boston-header.jpg) top center no-repeat;
+}
+#event-nav-boston a{
+	background: url(../images/events-nav-boston.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-boston a:hover{background-position: 0 -226px;}
+#boston h1#title {
+	background: url(../images/boston/page-title.png) 0 0 no-repeat;
+}
+
+/* @end */
+
+/* @group Boulder */
+
+#boulder div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 45px;
+}
+#boulder.no_register div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 105px;
+}
+#boulder span#logo {
+  background: url(../images/boulder/boulder-sign.gif) no-repeat left top;
+}
+#boulder div#wrapper { 
+  background: url(../images/boulder/boulder-header.jpg) no-repeat center top; 
 }
 
 /* @end */
@@ -836,28 +912,10 @@ div#map a {
   clear: left;
   display: block;
   font-size: .8em;
+	background: #f1f1f1;
+}
+#boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
+	background: #f1f1f1;
 }
 
-dl {
-  margin: 0;
-  padding: 0;
-}
-dt {
-  margin-top: 1em;
-}
-dt.past {
-  font-style: italic;
-}
-dt.past a {
-  font-style: normal;
-}
-dd {
-  margin-left: 1em;
-  padding-left: 0;
-  margin-top: .5em;
-}
-dd.more {
-  margin-left: 1.25em;
-  padding-left: 0;
-  font-size: .8em;
-}
+
