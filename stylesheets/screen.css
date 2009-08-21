@@ -275,14 +275,24 @@ div#main-content{
 	background: url(../images/sidebar-shadow.jpg) top right no-repeat;
 }
 
-h1#join-boston{
-	background: url(../images/join-us-boston-header.jpg) 0 0 no-repeat;
-	width: 589px;
-	height: 56px;
+h1#title {
+	width: 592px;
+	height: 81px;
 	text-indent: -9999px;
 	margin: 0px 0px 20px 0px;
 }
-
+h1#title .coming-soon {
+	background: url(../images/comingsoon-title.png) 0 0 no-repeat;
+}
+#boston h1#title {
+	background: url(../images/boston/page-title.png) 0 0 no-repeat;
+}
+#durham h1#title {
+	background: url(../images/durham/page-title.png) 0 0 no-repeat;
+}
+#dc h1#title {
+	background: url(../images/dc/page-title.png) 0 0 no-repeat;
+}
 #agenda {
 	padding: 10px 0px 20px 0px;
 }
@@ -398,7 +408,7 @@ tr.keynote{
 	padding: 0px 0px 20px 0px;	
 }
 
-#aside #aside-sec-nav #aside-events-current li{
+#boston #boston-event-link li, #dc #dc-event-link li, #durham #durham-event-link li {
 	background: #f1f1f1;
 	border-bottom: 1px solid #ebebeb;
 	border-top: 1px solid #ebebeb;
