@@ -388,27 +388,27 @@ tr.keynote{
 	padding: 0px 0px 0px 0px;
 }
 
-#aside #aside-sec-nav #aside-events li{
+#aside-events li{
 	border-bottom: 1px solid #ebebeb;
 	border-top: 1px solid #ebebeb;
 	padding: 10px 0px 10px 24px;
 	margin: 10px 0px -11px -24px;
 }
 
-#aside #aside-sec-nav #aside-events a {
+#aside-events a {
 	text-decoration: none;
 	color: #666666;
 }
 
-#aside #aside-sec-nav #aside-events li:hover{
+#aside-events li:hover{
 	background: #f1f1f1;
 }
 
-#aside #aside-sec-nav #aside-events-current{
+#aside-events-current{
 	padding: 0px 0px 20px 0px;	
 }
 
-#boston #boston-event-link li, #dc #dc-event-link li, #durham #durham-event-link li {
+#boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
 	background: #f1f1f1;
 	border-bottom: 1px solid #ebebeb;
 	border-top: 1px solid #ebebeb;
