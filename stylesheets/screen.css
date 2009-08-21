@@ -757,8 +757,8 @@ h3.questions {
 #boston span#logo {
   background: url(../images/boston/logo.png) no-repeat left top;
 }
-#durham div.wrapper{
-	background: url(../images/durham/boston-header.jpg) top center no-repeat;
+#boston div.wrapper{
+	background: url(../images/boston/boston-header.jpg) top center no-repeat;
 }
 #event-nav-boston{
 	padding-right: 10px;
