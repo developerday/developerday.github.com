@@ -300,6 +300,14 @@ h1#title, h1#title-coming-soon {
   	margin: 0px 0px 20px 0px;
   }
 
+h1#join-austin{
+	background: url(../images/austin/join-us-header.png) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	margin: 0px 0px 20px 0px;
+}
+
 h1#join-boulder{
 	background: url(../images/boulder/join-us-header.png) 0 0 no-repeat;
 	width: 589px;
