@@ -92,6 +92,9 @@ div.wrapper{
 #boulder div.wrapper {
 	background: url(../images/boulder/boulder-header.jpg) top center no-repeat;
 }
+#austin div.wrapper {
+	background: url(../images/austin/austin-header.jpg) top center no-repeat;
+}
 
 div#header {
   margin: 0 auto;
@@ -221,6 +224,15 @@ div#content{
 	float: left;
 	text-indent: -9999px;	
 }
+
+#event-nav-austin a{
+	background: url(../images/events-nav-austin.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-austin a:hover{background-position: 0 -226px;}
 
 #event-nav-boulder a{
 	background: url(../images/events-nav-boulder.jpg) 0 0 no-repeat;
@@ -881,19 +893,19 @@ h3.questions {
 
 /* @end */
 
-/* @group Boulder */
+/* @group Austin */
 
-#boulder div#header {
+#austin div#header {
   background: url(../images/dc/description.png) no-repeat 96% 45px;
 }
-#boulder.no_register div#header {
+#austin.no_register div#header {
   background: url(../images/dc/description.png) no-repeat 96% 105px;
 }
-#boulder span#logo {
-  background: url(../images/boulder/boulder-sign.gif) no-repeat left top;
+#austin span#logo {
+  background: url(../images/austin/austin-sign.png) no-repeat left top;
 }
-#boulder div#wrapper { 
-  background: url(../images/boulder/boulder-header.jpg) no-repeat center top; 
+#austin div#wrapper { 
+  background: url(../images/austin/austin-header.jpg) no-repeat center top; 
 }
 
 /* @end */
@@ -926,7 +938,7 @@ div#map a {
   font-size: .8em;
 	background: #f1f1f1;
 }
-#boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
+#austin #aside-events li#austin-event-link, #boulder #aside-events li#boulder-event-link, #boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
 	background: #f1f1f1;
 }
 
