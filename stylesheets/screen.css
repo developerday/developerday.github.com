@@ -527,7 +527,10 @@ h3.interior-header{
 	color: #d36c18;
 }
 
-#talk-schedule td{
+#schedule-2010 {
+  width: 100%;
+}
+#talk-schedule td, #schedule-2010 td{
 	border-top: 1px solid #cccccc;
 	vertical-align: text-top;
 	padding: 10px 0px;
@@ -538,8 +541,13 @@ h3.interior-header{
 	padding: 10px;
 	text-align: center;
 }
+#schedule-2010 .event-speaker{
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+}
 
-#talk-schedule .talk-time{
+#talk-schedule .talk-time, #schedule-2010 .talk-time{
 	font-weight: normal;
 	padding: 0px 0px 5px;
 	margin: 0px;
@@ -548,6 +556,10 @@ h3.interior-header{
 #talk-schedule h3.talk-title{
 	padding: 0px 0px 10px;
 	margin: 0px;
+}
+#schedule-2010 h3.talk-title{
+  padding: 0;
+  margin: 0;
 }
 
 #talk-schedule td img {
