@@ -840,9 +840,6 @@ h3.questions {
 #durham2010.no_register div#header {
   background: url(../images/dc/description.png) no-repeat 96% 105px;
 }
-#durham2010 span#logo {
-  background: url(../images/durham/logo.png) no-repeat left top;
-}
 #durham2010 div.wrapper{
 	background: url(../images/durham/durham-header.jpg) top center no-repeat;
 }
@@ -854,7 +851,13 @@ h3.questions {
 	height: 113px;
 }
 #event-nav-durham2010 a:hover{background-position: 0 -226px;}
-
+#durham2010 span#logo {
+  background: url(../images/durham2010/billboard.png) no-repeat left top;
+}
+/*#austin div#wrapper { 
+  background: url(../images/austin/austin-header.jpg) no-repeat center top; 
+}
+*/
 
 /* @end */
 
