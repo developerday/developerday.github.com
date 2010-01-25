@@ -83,7 +83,7 @@ div.wrapper{
 #dc div.wrapper{
 	background: url(../images/dc/dc-header.jpg) top center no-repeat;
 }
-#durham div.wrapper{
+#durham2010 div.wrapper, #durham div.wrapper{
 	background: url(../images/durham/durham-header.jpg) top center no-repeat;
 }
 #boston div.wrapper {
@@ -300,6 +300,13 @@ h1#title, h1#title-coming-soon {
   	margin: 0px 0px 20px 0px;
   }
 
+h1#join-durham{
+	background: url(../images/durham2010/join-us-header.png) 0 0 no-repeat;
+	width: 589px;
+	height: 56px;
+	text-indent: -9999px;
+	margin: 0px 0px 20px 0px;
+}
 h1#join-austin{
 	background: url(../images/austin/join-us-header.png) 0 0 no-repeat;
 	width: 589px;
@@ -825,6 +832,33 @@ h3.questions {
 
 /* @end */
 
+/* @group Durham 2010 */
+
+#durham2010 div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 45px;
+}
+#durham2010.no_register div#header {
+  background: url(../images/dc/description.png) no-repeat 96% 105px;
+}
+#durham2010 span#logo {
+  background: url(../images/durham/logo.png) no-repeat left top;
+}
+#durham2010 div.wrapper{
+	background: url(../images/durham/durham-header.jpg) top center no-repeat;
+}
+#event-nav-durham2010 a{
+	background: url(../images/events-nav-durham2010.jpg) 0 0 no-repeat;
+	display: block;
+	outline: none;
+	width: 189px;
+	height: 113px;
+}
+#event-nav-durham2010 a:hover{background-position: 0 -226px;}
+
+
+/* @end */
+
+
 /* @group DC */
 
 #dc div#header {
@@ -946,7 +980,7 @@ div#map a {
   font-size: .8em;
 	background: #f1f1f1;
 }
-#austin #aside-events li#austin-event-link, #boulder #aside-events li#boulder-event-link, #boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
+#durham2010 #aside-events li#durham2010-event-link, #austin #aside-events li#austin-event-link, #boulder #aside-events li#boulder-event-link, #boston #aside-events li#boston-event-link, #dc #aside-events li#dc-event-link, #durham #aside-events li#durham-event-link {
 	background: #f1f1f1;
 }
 
